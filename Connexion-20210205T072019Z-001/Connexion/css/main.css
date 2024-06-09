@@ -1,0 +1,315 @@
+/*font-face permet de charger des polices personnalisées 
+sur une page Web. Une fois ajoutée à une feuille de style, 
+la règle demande au navigateur de télécharger la police à partir de l'endroit 
+où elle est hébergée, puis de l'afficher comme spécifié dans le CSS.
+@font-face*/
+{
+	font-family:Poppins-Bold;
+src:url(../fonts/poppins/Poppins-Bold.ttf)}
+
+@font-face
+{
+	font-family:Poppins-Medium;
+src:url(../fonts/poppins/Poppins-Medium.ttf)}
+
+@font-face
+{
+	font-family:Montserrat-Bold;
+src:url(../fonts/montserrat/Montserrat-Bold.ttf)}
+
+/*L'astérisque (*) est le sélecteur universel en CSS.
+ Il correspond à un élément de n'importe quel type.*/
+*
+{
+	box-sizing:border-box;
+	margin:0;
+padding:0}
+
+body,html
+{
+	height:100%;
+font-family:Poppins-Regular,sans-serif}
+
+p
+{
+	margin:0;
+	font-family:Poppins-Regular;
+	font-size:14px;
+	line-height:1.7;
+color:#666}
+
+input
+{
+	border:none;
+outline:0}
+
+input:focus
+{
+border-color:transparent!important}
+
+input:focus::-webkit-input-placeholder
+{
+color:transparent}
+
+input:focus:-moz-placeholder
+{
+color:transparent}
+
+input:focus::-moz-placeholder
+{
+color:transparent}
+
+input:focus:-ms-input-placeholder
+{
+color:transparent}
+
+input::-webkit-input-placeholder
+{
+color:#999}
+
+input:-moz-placeholder
+{
+color:#999}
+
+input::-moz-placeholder
+{
+color:#999}
+
+input:-ms-input-placeholder
+{
+color:#999}
+
+button
+{
+	border:none;
+	outline:0!important;
+background:0 0}
+
+button:hover
+{
+cursor:pointer}
+
+.limiter
+{
+	width:100%;
+margin:0 auto}
+
+.container-login100
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	padding:15px;
+	min-height:100vh;
+background-color:#00abd6}
+
+.wrap-login100
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	width:960px;
+	padding:177px 130px 0 95px;
+	border-radius:15px;
+	overflow:hidden;
+background:#fde9e0bb}
+
+.login100-pic
+{
+width:316px}
+
+.login100-pic img
+{
+max-width:100%}
+
+.login100-form
+{
+width:290px}
+
+.login100-form-title
+{
+	display:block;
+	width:100%;
+	padding-bottom:54px;
+	text-align:center;
+	font-family:Poppins-Bold;
+	font-size:24px;
+	line-height:1.2;
+color:#333}
+
+.wrap-input100
+{
+	z-index:1;
+	position:relative;
+	width:100%;
+margin-bottom:10px}
+
+.input100
+{
+	display:block;
+	width:100%;
+	height:50px;
+	padding:0 30px 0 68px;
+	border-radius:25px;
+	font-family:Poppins-Medium;
+	font-size:15px;
+	line-height:1.5;
+	color:#666;
+background:#e6e6e6}
+
+.focus-input100
+{
+	display:block;
+	z-index:-50;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border-radius:25px;
+	color:#00d66c;
+box-shadow:0 0}
+
+.input100:focus+.focus-input100
+{
+	-webkit-animation:anim-shadow .5s ease-in-out forwards;
+animation:anim-shadow .5s ease-in-out forwards}
+
+@-webkit-keyframes anim-shadow
+{
+	to
+	{
+		opacity:0;
+	box-shadow:0 0 70px 25px}
+}
+
+@keyframes anim-shadow
+{
+	to
+	{
+		opacity:0;
+	box-shadow:0 0 70px 25px}
+}
+
+.symbol-input100
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	position:absolute;
+	bottom:0;
+	left:0;
+	align-items:center;
+	width:100%;
+	height:100%;
+	padding-left:35px;
+	border-radius:25px;
+	font-size:15px;
+	color:#666;
+	-webkit-transition:all .4s;
+	-moz-transition:all .4s;
+	-o-transition:all .4s;
+	transition:all .4s;
+pointer-events:none}
+
+.input100:focus+.focus-input100+.symbol-input100
+{
+	padding-left:28px;
+color:#57b846}
+
+.container-login100-form-btn
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:100%;
+padding-top:20px}
+
+.login100-form-btn
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:50px;
+	padding:0 25px;
+	border-radius:25px;
+	text-transform:uppercase;
+	font-family:Montserrat-Bold;
+	font-size:15px;
+	line-height:1.5;
+	color:#fff;
+	background:#00d66c;
+	-webkit-transition:all .4s;
+	-moz-transition:all .4s;
+	-o-transition:all .4s;
+transition:all .4s}
+
+.login100-form-btn:hover
+{
+background:#4de298}
+
+@media (max-width:992px)
+{
+	.wrap-login100
+	{
+	padding:177px 90px 33px 85px}
+
+	.login100-pic
+	{
+	width:35%}
+
+	.login100-form
+	{
+	width:50%}
+}
+
+@media (max-width:768px)
+{
+	.wrap-login100
+	{
+	padding:100px 80px 33px 80px}
+
+	.login100-pic
+	{
+	display:none}
+
+	.login100-form
+	{
+	width:100%}
+}
+
+@media (max-width:576px)
+{
+	.wrap-login100
+	{
+	padding:100px 15px 33px 15px}
+}
+
+.validate-input
+{
+position:relative}
+
+.Accueil
+{
+margin-bottom:10px}
